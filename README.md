@@ -17,6 +17,6 @@
   >*getting started>search & query for details*>
 
   ## DEMO
-  [![CINE | FILM](./assets/cinefilm2.webp)](https://materializecss.com/)
+  [![CINE | FILM](./assets/cinefilm2.webp)](https://rismo.fr/apps/cinefilm)
 
 
