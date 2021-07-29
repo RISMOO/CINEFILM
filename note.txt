@@ -1,0 +1,27 @@
+f7f86c0190c2232169179191904f6de6//code de lapi
+
+on recupere le lien https de l'api sur le site https://developers.themoviedb.org/3/getting-started/search-and-query-for-details
+--> https://api.themoviedb.org/3/search/movie?api_key=f7f86c0190c2232169179191904f6de6&query=Jack+Reacher
+
+telecharger android studio
+ pluggin lighthouse
+
+ manifest.json https://developer.mozilla.org/fr/docs/Web/Manifest
+
+2 https sur mobile:
+aller sur le lien : chrome://inspect/#devices
+Entrez dans l'url de l'émulateur :http://localhost:5500
+
+3 - service worker(cache)
+// Afficher automatiquement la bannière "Ajouter à l'écran d'accueil"
+https://developers.google.com/web/fundamentals/app-install-banners/native
+
+
+A rajouter (éventuellement) dans le manifeste :banniere ajouter icon
+"prefer_related_applications": true,
+"related_applications": [
+  {
+    "platform": "play",
+    "id": "com.google.samples.apps.iosched"
+  }
+]
