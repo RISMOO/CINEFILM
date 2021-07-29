@@ -12,7 +12,7 @@
  ## GETTING STARTED
 ### API:
 * [Themoviedb.org](https://www.themoviedb.org/?language=fr)
-   >*Paremètre > API >Clé d'API (v3 auth)*
+   >*Paramètre > API >Clé d'API (v3 auth)*
 * [Developers.themoviedb.org](https://developers.themoviedb.org/3/getting-started/introduction)
   >*getting started>search & query for details*>
 
