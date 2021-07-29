@@ -23,6 +23,20 @@ h1 {
   margin-top: 10%;
 }
 
+img.wow {
+
+  width:80px;
+  -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    transform: rotate(
+-15deg
+);
+}
+
+p {
+
+  font-size: 11px;
+}
 input {
   border: none;
   border-radius: 25px;
@@ -38,6 +52,11 @@ input {
 input::placeholder {
   text-align: center;
   font-size: 1.2rem;
+}
+
+footer#footer
+{
+  margin-top: 5%;
 }
 
 button.btn {
