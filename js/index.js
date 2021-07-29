@@ -14,6 +14,7 @@ const form = document.getElementById('searchForm')
 const searchInput = document.getElementById('searchInput')
 const result = document.getElementById('result')
 let rechercher = document.getElementById('rechercher')
+const reset = document.getElementById('reset')
 
 let movies = [];
 let search = '';
@@ -50,42 +51,31 @@ ${movie.original_title}
         .join(""); //enleve la virgule entre chaque élementq
 };
 
-
-
 form.addEventListener("submit", (e) => {
     e.preventDefault(); // on annule le comportement par default de la page 
     //on recupere la valeur de notre input 
     //console.log(searchInput.value);
-
     search = searchInput.value;
-    if (search) {
-        var btn = document.createElement("button");
-        btn.classList.add("newbutton");
-        btn.innerHTML = "RESET";
-        document.body.appendChild(btn);
-       
-        btn.addEventListener("click", function () {
-
-            result.innerText = "";
-            searchInput.value ="";
-            document.getElementById('rechercher').disabled = false;
-            btn.remove();
-
-        });
-
-        //fetchMovies(); //on appelle la fonction
-        //on appele la fonction
-        document.getElementById('rechercher').disabled = true;
-
-        moviesDisplay();
-
-
+    if(searchInput.value =""){
+        reset.style.display="none";
     }
+    if (search) {
+        reset.disabled = false;
+        reset.style.display="block";
+        reset.addEventListener("click", function () {
+            result.innerText = "";
+        
+            searchInput.value = "";
+            reset.style.display="none";
+        
+        });
+       //fetchMovies(); //on appelle la fonction
+        //on appele la fonction
+        moviesDisplay();
+       
+    }
+   
 });
-
-
-
-
 
 
 

@@ -3,6 +3,8 @@
   src: url(./assets/LibreBaskerville-Regular.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 * {
   list-style-type: none;
 }
@@ -10,7 +12,7 @@ body {
   background: black;
   color: white;
   text-align: center;
-  font-family: "font-1", cursive;
+  font-family: 'Anton', sans-serif;
 }
 h1 {
   font-size: 3rem;
@@ -41,7 +43,11 @@ input::placeholder {
 button.btn {
   margin-top: 1%;
 }
+#reset {
 
+  text-align: center;
+  margin: auto;
+}
 .newbutton
 {
 
@@ -59,8 +65,7 @@ button.btn {
 
   
     color: #ffffff;
-    background-color: rgb(141, 0, 0)(241, 6, 6);
-  
+    background-color: rgb(243, 6, 6)(241, 6, 6);
     border-color: #f10d0d;
     width: 100px;
 
